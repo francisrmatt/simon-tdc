@@ -1,0 +1,259 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Jul  6 15:08:41 2023
+| Host         : mattxps running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   181 |
+|    Minimum number of control sets                        |   181 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    42 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   181 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   171 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             185 |           51 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             398 |          178 |
+| Yes          | No                    | No                     |            2819 |         1951 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             180 |           43 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+---------------------------------+---------------------------+------------------+----------------+--------------+
+| Clock Signal |          Enable Signal          |      Set/Reset Signal     | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------+---------------------------------+---------------------------+------------------+----------------+--------------+
+|  clock/clk1  | uartTX/r_SM_Main[2]             |                           |                1 |              1 |         1.00 |
+|  clock/clk1  | uartTX/fsm_state_reg[1]         | uartTX/fsm_state_reg[3]   |                2 |              2 |         1.00 |
+|  clock/clk1  | uartRX/E[0]                     |                           |                2 |              4 |         2.00 |
+|  clock/clk1  | uartTX/r_Clock_Count_0          | uartTX/r_Clock_Count0     |                2 |              5 |         2.50 |
+|  clock/clk1  | uartTX/fsm_state_reg[1]         |                           |                3 |              7 |         2.33 |
+|  clock/clk1  | uartRX/r_Clock_Count[7]_i_1_n_0 |                           |                3 |              7 |         2.33 |
+|  clock/clk1  | uartTX/r_Tx_Data_1              |                           |                2 |              8 |         4.00 |
+|  clock/clk1  | TXdata[7]_i_1_n_0               |                           |                4 |              8 |         2.00 |
+|  clock/clk0  |                                 | clear                     |                2 |             10 |         5.00 |
+|  clock/clk1  | delay_counter[12]_i_2_n_0       | delay_counter[12]_i_1_n_0 |                4 |             13 |         3.25 |
+|  clock/clk1  | s0/key_schedule[19][15]_i_1_n_0 |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s1/key_schedule[30][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s1/key_schedule[29][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s1/key_schedule[31][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s1/key_schedule[6][15]_i_1_n_0  |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s1/key_schedule[9][15]_i_1_n_0  |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s0/key_schedule[0][15]_i_1_n_0  |                           |               16 |             16 |         1.00 |
+|  clock/clk1  | s0/key_schedule[22][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s0/key_schedule[24][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s0/key_schedule[29][15]_i_1_n_0 |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s0/key_schedule[16][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s0/key_schedule[21][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s0/key_schedule[2][15]_i_1_n_0  |                           |                8 |             16 |         2.00 |
+|  clock/clk1  | s0/key_schedule[11][15]_i_1_n_0 |                           |                7 |             16 |         2.29 |
+|  clock/clk1  | s0/key_schedule[14][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s0/key_schedule[15][15]_i_1_n_0 |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s0/key_schedule[12][15]_i_1_n_0 |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s0/key_schedule[18][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s0/key_schedule[1][15]_i_1_n_0  |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s0/key_schedule[23][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s0/key_schedule[25][15]_i_1_n_0 |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s0/key_schedule[5][15]_i_1_n_0  |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s0/key_schedule[20][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s0/key_schedule[26][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s0/key_schedule[17][15]_i_1_n_0 |                           |                7 |             16 |         2.29 |
+|  clock/clk1  | s0/key_schedule[28][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s0/key_schedule[27][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s0/key_schedule[10][15]_i_1_n_0 |                           |                6 |             16 |         2.67 |
+|  clock/clk1  | s0/key_schedule[13][15]_i_1_n_0 |                           |                6 |             16 |         2.67 |
+|  clock/clk1  | s0/key_schedule[30][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s0/key_schedule[31][15]_i_1_n_0 |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s1/key_schedule[5][15]_i_1_n_0  |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s1/key_schedule[7][15]_i_1_n_0  |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s0/key_schedule[8][15]_i_1_n_0  |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s1/key_schedule[4][15]_i_1_n_0  |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s0/key_schedule[7][15]_i_1_n_0  |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s0/key_schedule[4][15]_i_1_n_0  |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s0/key_schedule[6][15]_i_1_n_0  |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s0/key_schedule[9][15]_i_1_n_0  |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s0/key_schedule[3][15]_i_1_n_0  |                           |                8 |             16 |         2.00 |
+|  clock/clk1  | s4/key_schedule[5][15]_i_1_n_0  |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s4/key_schedule[7][15]_i_1_n_0  |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s4/key_schedule[9][15]_i_1_n_0  |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s4/key_schedule[8][15]_i_1_n_0  |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s4/key_schedule[3][15]_i_1_n_0  |                           |               15 |             16 |         1.07 |
+|  clock/clk1  | s4/key_schedule[4][15]_i_1_n_0  |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s4/key_schedule[6][15]_i_1_n_0  |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s1/key_schedule[8][15]_i_1_n_0  |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s4/key_schedule[0][15]_i_1_n_0  |                           |               16 |             16 |         1.00 |
+|  clock/clk1  | s4/key_schedule[18][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s4/key_schedule[1][15]_i_1_n_0  |                           |               15 |             16 |         1.07 |
+|  clock/clk1  | s4/key_schedule[21][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s4/key_schedule[19][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s4/key_schedule[11][15]_i_1_n_0 |                           |                8 |             16 |         2.00 |
+|  clock/clk1  | s4/key_schedule[13][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s4/key_schedule[23][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s4/key_schedule[24][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s4/key_schedule[22][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s4/key_schedule[2][15]_i_1_n_0  |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s4/key_schedule[27][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s4/key_schedule[25][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s4/key_schedule[29][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s4/key_schedule[16][15]_i_1_n_0 |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s4/key_schedule[28][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s4/key_schedule[15][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s4/key_schedule[12][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s4/key_schedule[17][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s4/key_schedule[10][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s4/key_schedule[26][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s4/key_schedule[30][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s4/key_schedule[14][15]_i_1_n_0 |                           |                7 |             16 |         2.29 |
+|  clock/clk1  | s4/key_schedule[20][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s4/key_schedule[31][15]_i_1_n_0 |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s1/key_schedule[3][15]_i_1_n_0  |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s3/key_schedule[15][15]_i_1_n_0 |                           |                7 |             16 |         2.29 |
+|  clock/clk1  | s3/key_schedule[10][15]_i_1_n_0 |                           |                8 |             16 |         2.00 |
+|  clock/clk1  | s3/key_schedule[22][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s3/key_schedule[13][15]_i_1_n_0 |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s3/key_schedule[20][15]_i_1_n_0 |                           |                8 |             16 |         2.00 |
+|  clock/clk1  | s3/key_schedule[0][15]_i_1_n_0  |                           |               15 |             16 |         1.07 |
+|  clock/clk1  | s3/key_schedule[12][15]_i_1_n_0 |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s3/key_schedule[18][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s3/key_schedule[14][15]_i_1_n_0 |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s3/key_schedule[19][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s3/key_schedule[16][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s3/key_schedule[23][15]_i_1_n_0 |                           |               16 |             16 |         1.00 |
+|  clock/clk1  | s3/key_schedule[24][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s3/key_schedule[11][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s3/key_schedule[1][15]_i_1_n_0  |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s3/key_schedule[21][15]_i_1_n_0 |                           |                8 |             16 |         2.00 |
+|  clock/clk1  | s3/key_schedule[17][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s3/key_schedule[2][15]_i_1_n_0  |                           |                7 |             16 |         2.29 |
+|  clock/clk1  | s3/key_schedule[30][15]_i_1_n_0 |                           |               15 |             16 |         1.07 |
+|  clock/clk1  | s3/key_schedule[29][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s3/key_schedule[26][15]_i_1_n_0 |                           |                8 |             16 |         2.00 |
+|  clock/clk1  | s3/key_schedule[25][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s3/key_schedule[28][15]_i_1_n_0 |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s3/key_schedule[27][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s3/key_schedule[31][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s3/key_schedule[5][15]_i_1_n_0  |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s3/key_schedule[3][15]_i_1_n_0  |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s3/key_schedule[4][15]_i_1_n_0  |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s3/key_schedule[9][15]_i_1_n_0  |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s3/key_schedule[7][15]_i_1_n_0  |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s3/key_schedule[6][15]_i_1_n_0  |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s3/key_schedule[8][15]_i_1_n_0  |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s2/key_schedule[19][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s2/key_schedule[21][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s2/key_schedule[23][15]_i_1_n_0 |                           |               15 |             16 |         1.07 |
+|  clock/clk1  | s2/key_schedule[18][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s2/key_schedule[13][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s2/key_schedule[24][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s2/key_schedule[17][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s2/key_schedule[12][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s2/key_schedule[22][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s2/key_schedule[11][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s2/key_schedule[14][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s2/key_schedule[15][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s2/key_schedule[20][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s2/key_schedule[16][15]_i_1_n_0 |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s2/key_schedule[25][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s2/key_schedule[26][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s2/key_schedule[27][15]_i_1_n_0 |                           |               16 |             16 |         1.00 |
+|  clock/clk1  | s2/key_schedule[0][15]_i_1_n_0  |                           |               16 |             16 |         1.00 |
+|  clock/clk1  | s2/key_schedule[10][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s2/key_schedule[1][15]_i_1_n_0  |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s2/key_schedule[28][15]_i_1_n_0 |                           |               15 |             16 |         1.07 |
+|  clock/clk1  | s2/key_schedule[29][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s2/key_schedule[30][15]_i_1_n_0 |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s2/key_schedule[2][15]_i_1_n_0  |                           |                9 |             16 |         1.78 |
+|  clock/clk1  | s2/key_schedule[31][15]_i_1_n_0 |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s2/key_schedule[3][15]_i_1_n_0  |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s2/key_schedule[4][15]_i_1_n_0  |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s2/key_schedule[5][15]_i_1_n_0  |                           |               15 |             16 |         1.07 |
+|  clock/clk1  | s2/key_schedule[6][15]_i_1_n_0  |                           |               15 |             16 |         1.07 |
+|  clock/clk1  | s2/key_schedule[7][15]_i_1_n_0  |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s2/key_schedule[8][15]_i_1_n_0  |                           |               16 |             16 |         1.00 |
+|  clock/clk1  | s2/key_schedule[9][15]_i_1_n_0  |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s1/key_schedule[27][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s1/key_schedule[18][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s1/key_schedule[26][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s1/key_schedule[24][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s1/key_schedule[25][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s1/key_schedule[10][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s1/key_schedule[28][15]_i_1_n_0 |                           |               16 |             16 |         1.00 |
+|  clock/clk1  | s1/key_schedule[20][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s1/key_schedule[14][15]_i_1_n_0 |                           |               11 |             16 |         1.45 |
+|  clock/clk1  | s1/key_schedule[16][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s1/key_schedule[0][15]_i_1_n_0  |                           |               16 |             16 |         1.00 |
+|  clock/clk1  | s1/key_schedule[17][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s1/key_schedule[13][15]_i_1_n_0 |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s1/key_schedule[11][15]_i_1_n_0 |                           |                6 |             16 |         2.67 |
+|  clock/clk1  | s1/key_schedule[19][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s1/key_schedule[1][15]_i_1_n_0  |                           |               13 |             16 |         1.23 |
+|  clock/clk1  | s1/key_schedule[21][15]_i_1_n_0 |                           |               15 |             16 |         1.07 |
+|  clock/clk1  | s1/key_schedule[22][15]_i_1_n_0 |                           |               12 |             16 |         1.33 |
+|  clock/clk1  | s1/key_schedule[15][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s1/key_schedule[23][15]_i_1_n_0 |                           |               14 |             16 |         1.14 |
+|  clock/clk1  | s1/key_schedule[12][15]_i_1_n_0 |                           |               10 |             16 |         1.60 |
+|  clock/clk1  | s1/key_schedule[2][15]_i_1_n_0  |                           |                9 |             16 |         1.78 |
+|  clock/clk1  |                                 |                           |               10 |             23 |         2.30 |
+|  clock/clk1  | s0/ciphertext0                  | s0/ciphertext[31]_i_1_n_0 |                6 |             32 |         5.33 |
+|  clock/clk1  | s1/ciphertext0                  | s1/ciphertext[31]_i_1_n_0 |                5 |             32 |         6.40 |
+|  clock/clk1  | s4/ciphertext0                  | s4/ciphertext[31]_i_1_n_0 |                6 |             32 |         5.33 |
+|  clock/clk1  | s3/ciphertext0                  | s3/ciphertext[31]_i_1_n_0 |               11 |             32 |         2.91 |
+|  clock/clk1  | s2/ciphertext0                  | s2/ciphertext[31]_i_1_n_0 |                7 |             32 |         4.57 |
+|  clock/clk1  | result[31]_i_1_n_0              |                           |               15 |             64 |         4.27 |
+|  clock/clk0  | tdc_data_reg_i_1_n_0            |                           |               50 |            160 |         3.20 |
+|  clock/clk0  |                                 |                           |               41 |            162 |         3.95 |
+|  clock/clk0  |                                 | rst                       |               73 |            168 |         2.30 |
+|  clock/clk1  |                                 | rst                       |              103 |            220 |         2.14 |
++--------------+---------------------------------+---------------------------+------------------+----------------+--------------+
+
+

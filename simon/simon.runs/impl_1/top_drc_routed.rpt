@@ -1,0 +1,48 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu Jul  6 15:09:21 2023
+| Host         : mattxps running 64-bit major release  (build 9200)
+| Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+| Design       : top
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 2
++-----------+----------+--------------------+------------+
+| Rule      | Severity | Description        | Violations |
++-----------+----------+--------------------+------------+
+| RTSTAT-10 | Warning  | No routable loads  | 1          |
+| ZPS7-1    | Warning  | PS7 block required | 1          |
++-----------+----------+--------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+RTSTAT-10#1 Warning
+No routable loads  
+132 net(s) have no routable loads. The problem bus(es) and/or net(s) are s1/ciphertext[31:0], s1/done, s2/ciphertext[31:0], s2/done,
+s3/ciphertext[31:0], s3/done, s4/ciphertext[31:0], s4/done.
+Related violations: <none>
+
+ZPS7-1#1 Warning
+PS7 block required  
+The PS7 cell must be used in this Zynq design in order to enable correct default configuration.
+Related violations: <none>
+
+

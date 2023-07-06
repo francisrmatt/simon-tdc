@@ -1,0 +1,464 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jul  6 15:06:10 2023
+# Process ID: 36768
+# Current directory: C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.runs/synth_1/top.vds
+# Journal file: C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.runs/synth_1\vivado.jou
+# Running On: mattxps, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 16913 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 438.156 ; gain = 163.305
+Command: read_checkpoint -auto_incremental -incremental {C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/utils_1/imports/synth_1/tb_simon.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/utils_1/imports/synth_1/tb_simon.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top top -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 34908
+INFO: [Synth 8-11241] undeclared symbol 'CLKFBOUT1', assumed default net type 'wire' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:33]
+INFO: [Synth 8-11241] undeclared symbol 'CLKFBIN1', assumed default net type 'wire' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:33]
+WARNING: [Synth 8-11065] parameter 's_IDLE' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:47]
+WARNING: [Synth 8-11065] parameter 's_TX_START_BIT' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:48]
+WARNING: [Synth 8-11065] parameter 's_TX_DATA_BITS' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:49]
+WARNING: [Synth 8-11065] parameter 's_TX_STOP_BIT' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:50]
+WARNING: [Synth 8-11065] parameter 's_CLEANUP' becomes localparam in 'uart_tx' with formal parameter declaration list [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:51]
+WARNING: [Synth 8-11065] parameter 's_IDLE' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:23]
+WARNING: [Synth 8-11065] parameter 's_RX_START_BIT' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:24]
+WARNING: [Synth 8-11065] parameter 's_RX_DATA_BITS' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:25]
+WARNING: [Synth 8-11065] parameter 's_RX_STOP_BIT' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:26]
+WARNING: [Synth 8-11065] parameter 's_CLEANUP' becomes localparam in 'uart_rx' with formal parameter declaration list [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:27]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1287.449 ; gain = 411.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/new/top.v:7]
+INFO: [Synth 8-6157] synthesizing module 'clock' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:21]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1519]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:80311]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 12.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 100 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_DIVIDE bound to: 6 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 3 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.000000 - type: double 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:80311]
+WARNING: [Synth 8-7071] port 'CLKFBOUTB' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'CLKFBSTOPPED' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'CLKINSTOPPED' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'CLKOUT0B' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'CLKOUT1B' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'CLKOUT2B' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'CLKOUT3B' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'CLKOUT6' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'DO' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'DRDY' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'PSDONE' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'CLKIN2' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'DADDR' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'DCLK' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'DEN' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'DI' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'DWE' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'PSCLK' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'PSEN' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7071] port 'PSINCDEC' of module 'MMCME2_ADV' is unconnected for instance 'MMCME2_BASE_inst1' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+WARNING: [Synth 8-7023] instance 'MMCME2_BASE_inst1' of module 'MMCME2_ADV' has 33 connections declared, but only 13 given [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:77]
+INFO: [Synth 8-6155] done synthesizing module 'clock' (0#1) [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:21]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartTX.v:36]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/uartrx.v:14]
+INFO: [Synth 8-6157] synthesizing module 'tdc_top' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_top.v:130]
+INFO: [Synth 8-6157] synthesizing module 'CARRY4' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1934]
+INFO: [Synth 8-6155] done synthesizing module 'CARRY4' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:1934]
+INFO: [Synth 8-6157] synthesizing module 'LDPE' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79304]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'LDPE' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79304]
+INFO: [Synth 8-6157] synthesizing module 'LUT5' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79590]
+	Parameter INIT bound to: 32'b11111111111111110000000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'LUT5' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79590]
+INFO: [Synth 8-6157] synthesizing module 'LDCE' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79143]
+	Parameter INIT bound to: 1'b0 
+INFO: [Synth 8-6155] done synthesizing module 'LDCE' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79143]
+INFO: [Synth 8-6155] done synthesizing module 'tdc_top' (0#1) [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_top.v:130]
+INFO: [Synth 8-638] synthesizing module 'tdc_decode' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_decode.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'tdc_decode' (0#1) [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/tdc_decode.vhd:32]
+INFO: [Synth 8-6157] synthesizing module 'simon' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/SimonCipherVerilog-master/simon.v:44]
+INFO: [Synth 8-6157] synthesizing module 'round' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/SimonCipherVerilog-master/round.v:43]
+	Parameter n bound to: 16 - type: integer 
+	Parameter m bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'round' (0#1) [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/SimonCipherVerilog-master/round.v:43]
+INFO: [Synth 8-6157] synthesizing module 'key_expansion' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/SimonCipherVerilog-master/key_expansion.v:43]
+	Parameter n bound to: 16 - type: integer 
+	Parameter m bound to: 4 - type: integer 
+WARNING: [Synth 8-567] referenced signal 'z' should be on the sensitivity list [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/SimonCipherVerilog-master/key_expansion.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'key_expansion' (0#1) [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/SimonCipherVerilog-master/key_expansion.v:43]
+WARNING: [Synth 8-689] width (8) of port connection 'i' does not match port width (7) of module 'key_expansion' [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/SimonCipherVerilog-master/simon.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'simon' (0#1) [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/SimonCipherVerilog-master/simon.v:44]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/new/top.v:152]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/new/top.v:7]
+WARNING: [Synth 8-3848] Net clk2t in module/entity clock does not have driver. [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/sources_1/imports/ZEDBOARD-On-ChipSensors/clock.v:31]
+WARNING: [Synth 8-3917] design top has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[1] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1398.641 ; gain = 522.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1398.641 ; gain = 522.836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1398.641 ; gain = 522.836
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.083 . Memory (MB): peak = 1399.629 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 41 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/constrs_1/imports/new/our_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/constrs_1/imports/new/our_constraints.xdc:362]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 34]]'. [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/constrs_1/imports/new/our_constraints.xdc:367]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/constrs_1/imports/new/our_constraints.xdc:372]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/constrs_1/imports/new/our_constraints.xdc:375]
+CRITICAL WARNING: [Designutils 20-1307] Command 'Stage' is not supported in the xdc constraint file. [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/constrs_1/imports/new/our_constraints.xdc:384]
+Finished Parsing XDC File [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/constrs_1/imports/new/our_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.srcs/constrs_1/imports/new/our_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1505.992 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1505.992 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1505.992 ; gain = 630.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1505.992 ; gain = 630.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1505.992 ; gain = 630.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'r_SM_Main_reg' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_IDLE |                              000 |                              000
+          s_TX_START_BIT |                              001 |                              001
+          s_TX_DATA_BITS |                              010 |                              010
+           s_TX_STOP_BIT |                              011 |                              011
+               s_CLEANUP |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_SM_Main_reg' using encoding 'sequential' in module 'uart_tx'
+WARNING: [Synth 8-6430] The Block RAM "top/tdc_data_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 1505.992 ; gain = 630.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 2     
+	   2 Input    9 Bit       Adders := 33    
+	   2 Input    8 Bit       Adders := 75    
+	   2 Input    7 Bit       Adders := 32    
+	   2 Input    6 Bit       Adders := 16    
+	   3 Input    6 Bit       Adders := 5     
+	   2 Input    5 Bit       Adders := 9     
+	   2 Input    4 Bit       Adders := 4     
+	   2 Input    3 Bit       Adders := 5     
++---XORs : 
+	   4 Input     16 Bit         XORs := 5     
+	   2 Input     16 Bit         XORs := 5     
+	   5 Input     16 Bit         XORs := 5     
++---Registers : 
+	              160 Bit    Registers := 1     
+	               32 Bit    Registers := 12    
+	               16 Bit    Registers := 160   
+	               13 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                5 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 9     
++---RAMs : 
+	               4K Bit	(512 X 8 bit)          RAMs := 1     
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 5     
+	   2 Input   32 Bit        Muxes := 136   
+	   2 Input   31 Bit        Muxes := 1     
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   29 Bit        Muxes := 1     
+	   2 Input   28 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   25 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   18 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 16    
+	   4 Input   16 Bit        Muxes := 10    
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 2     
+	  12 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 2     
+	  12 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   6 Input    8 Bit        Muxes := 2     
+	   2 Input    8 Bit        Muxes := 9     
+	   2 Input    7 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    3 Bit        Muxes := 15    
+	   5 Input    3 Bit        Muxes := 1     
+	  12 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 58    
+	   3 Input    2 Bit        Muxes := 1     
+	  64 Input    2 Bit        Muxes := 10    
+	   4 Input    2 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 10    
+	   2 Input    1 Bit        Muxes := 195   
+	   6 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 161   
+	  12 Input    1 Bit        Muxes := 9     
+	   4 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design top has port led[2] driven by constant 0
+WARNING: [Synth 8-3917] design top has port led[1] driven by constant 0
+RAM Pipeline Warning: Read Address Register Found For RAM tdc_data_reg. We will not be able to pipeline it. This may degrade performance. 
+RAM Pipeline Warning: Read Address Register Found For RAM tdc_data_reg. We will not be able to pipeline it. This may degrade performance. 
+WARNING: [Synth 8-6430] The Block RAM "top/tdc_data_reg" may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
+RAM Pipeline Warning: Read Address Register Found For RAM tdc_data_reg. We will not be able to pipeline it. This may degrade performance. 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:01:11 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top         | tdc_data_reg | 512 x 8(NO_CHANGE)     | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:17 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:17 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object   | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|top         | tdc_data_reg | 512 x 8(NO_CHANGE)     | W |   | 512 x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+--------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance tdc_data_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:02 ; elapsed = 00:01:20 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:06 ; elapsed = 00:01:25 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:06 ; elapsed = 00:01:25 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:06 ; elapsed = 00:01:25 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:06 ; elapsed = 00:01:25 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:07 ; elapsed = 00:01:26 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:07 ; elapsed = 00:01:26 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     7|
+|2     |CARRY4     |    43|
+|3     |LUT1       |     2|
+|4     |LUT2       |   263|
+|5     |LUT3       |   257|
+|6     |LUT4       |   329|
+|7     |LUT5       |   650|
+|8     |LUT6       |  4209|
+|9     |MMCME2_ADV |     1|
+|10    |MUXF7      |  1281|
+|11    |MUXF8      |   490|
+|12    |RAMB18E1   |     1|
+|13    |FDRE       |  3254|
+|14    |FDSE       |   168|
+|15    |LDCE       |    16|
+|16    |LDPE       |   160|
+|17    |IBUF       |     2|
+|18    |OBUF       |     4|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:07 ; elapsed = 00:01:26 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:23 . Memory (MB): peak = 2474.809 ; gain = 1491.652
+Synthesis Optimization Complete : Time (s): cpu = 00:01:07 ; elapsed = 00:01:26 . Memory (MB): peak = 2474.809 ; gain = 1599.004
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.089 . Memory (MB): peak = 2474.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1816 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2474.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: bdeb5cd0
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 45 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:32 . Memory (MB): peak = 2474.809 ; gain = 2009.695
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'C:/Users/matt/Documents/University/VRI 2023/Projects/simon/simon.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  6 15:07:51 2023...
