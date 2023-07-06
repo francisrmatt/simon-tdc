@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "dgSpecHash": "iMZmzHo4ITQpSeqcKn9TYk0yamauK8zrL/s9FPUJy4IL64ztMzgwa9MqZVRrYqDlzIroOeuhwpxC+7UjTiXTQg==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\matt\\Documents\\University\\VRI 2023\\Projects\\Zedboard-main\\Zedboard-main\\ZynqRO-UART-Checker-SIMON\\ZynqRO-UART-Checker\\ZynqRO-UART-Checker.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\matt\\.nuget\\packages\\ftd2xx_net\\1.0.14\\ftd2xx_net.1.0.14.nupkg.sha512",
+    "C:\\Users\\matt\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\matt\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.3\\microsoft.netframework.referenceassemblies.1.0.3.nupkg.sha512",
+    "C:\\Users\\matt\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net461\\1.0.3\\microsoft.netframework.referenceassemblies.net461.1.0.3.nupkg.sha512",
+    "C:\\Users\\matt\\.nuget\\packages\\system.data.datasetextensions\\4.5.0\\system.data.datasetextensions.4.5.0.nupkg.sha512",
+    "C:\\Users\\matt\\.nuget\\packages\\system.net.http\\4.3.4\\system.net.http.4.3.4.nupkg.sha512",
+    "C:\\Users\\matt\\.nuget\\packages\\system.security.cryptography.algorithms\\4.3.0\\system.security.cryptography.algorithms.4.3.0.nupkg.sha512",
+    "C:\\Users\\matt\\.nuget\\packages\\system.security.cryptography.encoding\\4.3.0\\system.security.cryptography.encoding.4.3.0.nupkg.sha512",
+    "C:\\Users\\matt\\.nuget\\packages\\system.security.cryptography.primitives\\4.3.0\\system.security.cryptography.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\matt\\.nuget\\packages\\system.security.cryptography.x509certificates\\4.3.0\\system.security.cryptography.x509certificates.4.3.0.nupkg.sha512"
+  ],
+  "logs": []
+}

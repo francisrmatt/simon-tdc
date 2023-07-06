@@ -1,0 +1,81 @@
+{
+  "format": 1,
+  "restore": {
+    "c:\\Users\\matt\\Documents\\University\\VRI 2023\\Projects\\Zedboard-main\\Zedboard-main\\ZynqRO-UART-Checker-SIMON\\ZynqRO-UART-Checker\\ZynqRO-UART-Checker.csproj": {}
+  },
+  "projects": {
+    "c:\\Users\\matt\\Documents\\University\\VRI 2023\\Projects\\Zedboard-main\\Zedboard-main\\ZynqRO-UART-Checker-SIMON\\ZynqRO-UART-Checker\\ZynqRO-UART-Checker.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\matt\\Documents\\University\\VRI 2023\\Projects\\Zedboard-main\\Zedboard-main\\ZynqRO-UART-Checker-SIMON\\ZynqRO-UART-Checker\\ZynqRO-UART-Checker.csproj",
+        "projectName": "ZynqRO-UART-Checker",
+        "projectPath": "c:\\Users\\matt\\Documents\\University\\VRI 2023\\Projects\\Zedboard-main\\Zedboard-main\\ZynqRO-UART-Checker-SIMON\\ZynqRO-UART-Checker\\ZynqRO-UART-Checker.csproj",
+        "packagesPath": "C:\\Users\\matt\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\matt\\Documents\\University\\VRI 2023\\Projects\\Zedboard-main\\Zedboard-main\\ZynqRO-UART-Checker-SIMON\\ZynqRO-UART-Checker\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\matt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "FTD2XX_NET": {
+              "target": "Package",
+              "version": "[1.0.14, )"
+            },
+            "Microsoft.CSharp": {
+              "target": "Package",
+              "version": "[4.*, )"
+            },
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Data.DataSetExtensions": {
+              "target": "Package",
+              "version": "[4.*, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.*, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

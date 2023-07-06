@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{F87880D7-240A-49B2-9C47-0BD6948B6D71}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ZynqRO_UART_Checker</RootNamespace>
+    <TargetFramework>net461</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <AssemblyTitle>ZynqRO-UART-Checker</AssemblyTitle>
+    <Product>ZynqRO-UART-Checker</Product>
+    <Copyright>Copyright ©  2020</Copyright>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="FTD2XX_NET" Version="1.0.14" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.*" />
+    <PackageReference Include="Microsoft.CSharp" Version="4.*" />
+    <PackageReference Include="System.Net.Http" Version="4.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FTD2XX_NET, Version=1.0.6.0, Culture=neutral, PublicKeyToken=61a8105588f51b1f, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\FTD2XX_NET.dll</HintPath>
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
